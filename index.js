@@ -147,10 +147,13 @@ c.addIngridients(1000,1000,1000,1000);
 c.switchPower(); 
 c.chooseRecipe('raf');
 c.chooseRecipe('raf');
+console.log(`молока осталось ${c.milkBottle.current}`);
 c.chooseRecipe('raf');
+console.log(`молока осталось ${c.milkBottle.current}`);
+
 c.chooseRecipe('raf');
 
-
+console.log(c);
 
 
 
