@@ -112,15 +112,17 @@ class CoffeeMachine {
 
 `============================================`
 
-const c = new CoffeeMachine();
-c.addRecipe(new Recipe ({
+const c = new CoffeeMachine(); // c = инстанс класса, результат инициализации класса. С = объект
+const espresso = new Recipe ({
     name: "espresso",
     coffee: 50,
     water: 0,
     milk: 0,
     syrup: 0,
     havefoam: false
-}));
+})
+
+c.addRecipe(espresso);
 
 
 c.addRecipe(new Recipe ({
@@ -143,7 +145,14 @@ c.addRecipe(new Recipe ({
 
 c.addIngridients(1000,1000,1000,1000);
 c.switchPower(); 
-c.chooseRecipe('ra');
+c.chooseRecipe('raf');
+c.chooseRecipe('raf');
+c.chooseRecipe('raf');
+c.chooseRecipe('raf');
+
+
+
+
 
 
 
